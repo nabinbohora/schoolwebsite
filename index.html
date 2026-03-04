@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecting...</title>
+
+<!-- Auto Redirect (change URL and seconds below) -->
+<meta http-equiv="refresh" content="5;url=https://example.com">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #667eea, #764ba2, #ff6a88);
+        background-size: 400% 400%;
+        animation: gradientBG 8s ease infinite;
+        text-align: center;
+        color: white;
+    }
+
+    @keyframes gradientBG {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 40px 25px;
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        max-width: 350px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .loader {
+        border: 5px solid rgba(255,255,255,0.3);
+        border-top: 5px solid white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: white;
+        color: #764ba2;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        background: #ff6a88;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Redirecting...</h1>
+    <p>You will be redirected shortly.</p>
+    <div class="loader"></div>
+    <a href="https://example.com">Click Here If Not Redirected</a>
+</div>
+
+</body>
+</html>
